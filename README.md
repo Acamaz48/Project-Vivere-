@@ -1,73 +1,190 @@
-# Welcome to your Lovable project
+# 🎉 Vivere ERP
 
-## Project info
+> **Sistema oficial da [Vivere Entretenimento](https://www.vivereentretenimento.com.br/)**  
+> Gestão de eventos, inventário e operações — feito para organizar, crescer e brilhar.
 
-**URL**: https://lovable.dev/projects/2084c463-2511-474e-9e32-b704d72b6bdb
+---
 
-## How can I edit this code?
+## 💡 O que é?
 
-There are several ways of editing your application.
+O *Vivere ERP* é uma plataforma web desenvolvida para gerenciar:
 
-**Use Lovable**
+✅ Eventos (planejamento, status, clientes)  
+✅ Inventário (materiais, categorias, status)  
+✅ Depósitos (localizações, estoque)  
+✅ Usuários (acesso, permissões)
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/2084c463-2511-474e-9e32-b704d72b6bdb) and start prompting.
+Tudo com uma interface moderna e intuitiva, permitindo à equipe da Vivere controle total das operações em tempo real.
 
-Changes made via Lovable will be committed automatically to this repo.
+---
 
-**Use your preferred IDE**
+## 🏗 Tecnologias Usadas
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+| Tecnologia        | Função no projeto                                           |
+|-------------------|-------------------------------------------------------------|
+| *Bun.js*       | Gerenciador de pacotes e runtime ultrarrápido para backend  |
+| *Node.js*      | Execução do servidor local e integração com banco de dados  |
+| *ESLint*       | Código limpo e padronizado com linting automático           |
+| *shadcn/ui*    | Componentes de interface estilizados com Tailwind CSS       |
+| *Tailwind CSS* | Framework de utilitários para design responsivo e ágil      |
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+---
 
-Follow these steps:
+## 📂 Estrutura do Projeto
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+- *Dashboard* → Resumo de eventos, solicitações, depósitos, taxa de ocupação  
+- *Eventos* → Criar, listar e gerenciar status (Confirmado, Em Andamento, Concluído, Pendente)  
+- *Inventário* → Cadastro de materiais, categorias, status e filtros  
+- *Depósitos* → Gestão de locais, endereços e alocação de materiais  
+- *Configurações* → Cadastro de usuários e permissões (administrador, comum)
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+---
 
-# Step 3: Install the necessary dependencies.
-npm i
+## 🚀 Como Rodar o Projeto
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+1️⃣ Clone o repositório:
+bash
+git clone <REPO_URL>
+
+
+2️⃣ Acesse a pasta:
+bash
+cd Project-Vivere--main
+
+
+3️⃣ Instale as dependências:
+bash
+bun install
+# ou, se preferir:
+npm install
+
+
+4️⃣ Inicie o servidor:
+bash
+bun run dev
+# ou:
 npm run dev
-```
 
-**Edit a file directly in GitHub**
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+5️⃣ Abra no navegador:
 
-**Use GitHub Codespaces**
+http://localhost:3000
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
 
-## What technologies are used for this project?
+---
 
-This project is built with:
+## ⚙ Arquivos Importantes
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- .gitignore → Ignora arquivos não versionados (ex.: logs, node_modules)  
+- bun.lockb → Registro exato das dependências (lockfile Bun.js)  
+- components.json → Lista e configura os componentes de UI ativos  
+- eslint.config.js → Regras de lint e boas práticas para o código
 
-## How can I deploy this project?
+---
 
-Simply open [Lovable](https://lovable.dev/projects/2084c463-2511-474e-9e32-b704d72b6bdb) and click on Share -> Publish.
+## 🤝 Como Contribuir
 
-## Can I connect a custom domain to my Lovable project?
+1️⃣ Faça um fork  
+2️⃣ Crie uma branch:
+bash
+git checkout -b feature/minha-funcionalidade
 
-Yes, you can!
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+3️⃣ Commit suas alterações:
+bash
+git commit -m "feat: adiciona nova funcionalidade"
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+
+4️⃣ Push para o repositório:
+bash
+git push origin feature/minha-funcionalidade
+
+
+5️⃣ Abra um Pull Request!
+
+---
+
+## ✨ Por que isso importa
+
+O Vivere ERP foi feito *para transformar o jeito que a Vivere gerencia seus eventos e operações*, garantindo:
+
+✅ Mais organização  
+✅ Menos retrabalho  
+✅ Crescimento sustentável
+
+É tecnologia que conecta produção, equipe e público — com foco em eficiência e impacto.
+
+---
+
+## 📣 Contato
+
+Dúvidas ou sugestões?  
+👉 [vivereentretenimento.com.br](https://www.vivereentretenimento.com.br)
+
+
+---
+
+
+# 📘 Manual do Usuário - Vivere ERP
+
+Bem-vindo ao Vivere ERP! Este manual vai te ajudar a navegar e usar a plataforma como um mestre.
+
+---
+
+## 🏠 Dashboard
+
+Aqui você vê um resumo das operações:
+- Eventos ativos
+- Novas solicitações
+- Depósitos cadastrados
+- Taxa de ocupação
+
+Use o calendário para visualizar os eventos por data e clique em cada evento para detalhes.
+
+---
+
+## 📅 Eventos
+
+- Adicione novos eventos com nome, cliente, datas e status.  
+- Acompanhe o andamento (Confirmado, Em Andamento, Concluído, Pendente).  
+- Edite ou remova eventos conforme necessário.
+
+---
+
+## 📦 Inventário
+
+- Consulte materiais cadastrados por nome ou categoria.  
+- Cadastre novos materiais clicando em *Novo Material*.  
+- Edite ou remova materiais usando os ícones de ação.
+
+---
+
+## 🏬 Depósitos
+
+- Veja todos os depósitos da empresa, com endereço e status.  
+- Adicione novos depósitos ou aloque materiais entre depósitos.
+
+---
+
+## 👥 Configurações (Usuários)
+
+- Cadastre novos usuários: nome, e-mail, senha e tipo de acesso (Comum ou Administrador).  
+- Visualize usuários cadastrados e remova, se necessário.
+
+---
+
+## 🔒 Login e Segurança
+
+- Apenas usuários cadastrados conseguem acessar.  
+- Administradores têm acesso total; usuários comuns têm acesso limitado.
+
+---
+
+## 💡 Dicas rápidas
+
+✅ Mantenha sempre os status atualizados.  
+✅ Use os filtros para encontrar rapidamente o que precisa.  
+✅ Revise permissões de usuários periodicamente.
+
+---
+
